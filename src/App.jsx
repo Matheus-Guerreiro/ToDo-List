@@ -26,13 +26,15 @@ function App() {
     if (task) {
       setList([...list, { id: uuid(), task, finished: false }]);
 
-      const campo = document.querySelector("input");
-      campo.value = "";
 
       setTask(0);
 
+      const campo = document.querySelector("#input");
+      campo.value = "";
+      
 
-      return campo;
+      
+      
     } else {
       toast.warning("Escreva uma tarefa.");
     }
